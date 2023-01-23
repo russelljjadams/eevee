@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Upgraded by: @Git-Ankitraj (https://github.com/Git-Ankitraj/blackeye-im)
 #Enhanced ngrok tunnelling
 trap 'printf "\n";stop;exit 1' 2
 menu() {
@@ -216,10 +215,10 @@ banner() {
 
 
 printf "     \e[101m\e[1;77m:: Disclaimer: Developers assume no liability and are not    ::\e[0m\n"
-printf "     \e[101m\e[1;77m:: responsible for any misuse or damage caused by BlackEye.  ::\e[0m\n"
-printf "     \e[101m\e[1;77m:: Only use for educational purporses!!                      ::\e[0m\n"
+printf "     \e[101m\e[1;77m:: responsible for any misuse or damage caused.  ::\e[0m\n"
+printf "     \e[101m\e[1;77m:: Educational purposes? Use it however you want.  ::\e[0m\n"
 printf "\n"
-printf "     \e[101m\e[1;77m::     BLACKEYE-IM! By @The-Burning                          ::\e[0m\n"
+printf "     \e[101m\e[1;77m::     E: Eddie Vedder Elite Engineering    ::\e[0m\n"
 printf "\n"
 }
 
