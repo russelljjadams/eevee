@@ -6,7 +6,7 @@ This is a staged payload written in C# that takes an IP address and uses it to c
 
 To use this payload, you will need to compile it first. You can do this by using the `csc` command that comes with the .NET Framework.
 
-csc /out:StagedPayload.exe StagedPayload.cs
+csc StagedPayload.cs
 
 Once the payload has been compiled, you will need to change the IP address in the file `StagedPayload.cs` before you can use it. The IP address is currently set to "127.0.0.1", replace it with the IP address of the attack machine. 
 
